@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Race</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<h1 style="margin-left:300px;">Diamond Race</h1>
+
+<body>
+    <div id="playfield">
+        <div id="startline"></div>
+
+        <div class="btn-group">
+            <button onclick="blue()" id="blue" style="background-color:blue" class="colored-button"></button>
+            <button onclick="green()" id="green" style="background-color:green" class="colored-button"></button>
+            <button onclick="red()" id="red" style="background-color:red" class="colored-button"></button>
+            <button onclick="yellow()" id="yellow" style="background-color:yellow" class="colored-button"></button>
+        </div>
+
+        <div id="endline"></div>
+    </div>
+    <div class="sidebar">
+        <button id="reset-button" onclick="reset()">Reset</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="scoreboard">Scoreboard</div>
+        <div class="rectangle" style="background-color:blue;"><p class="valuebox" id="valuebox_blue">0</p></div>
+        <div class="rectangle" style="background-color:green;"><p class="valuebox" id="valuebox_green">0</p></div>
+        <div class="rectangle" style="background-color:red;"><p class="valuebox" id="valuebox_red">0</p</div>
+        <div class="rectangle" style="background-color:yellow;"><p class="valuebox" id="valuebox_yellow">0</p></div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
