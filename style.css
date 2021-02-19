@@ -1,21 +1,4 @@
-/* #startline {
-    border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 0;
-  }
-#endline {
-    border-right: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 0;
-} */
- 
-#playfield {
+ #playfield {
     width: 700px;
     height: 400px;
     border-right: 6px solid black;
@@ -23,52 +6,39 @@
     position: absolute;
     margin-top: 10px;
     margin-left: 50px;
-    
 }
 
 .btn-group button {
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 5px 5px; /* Some padding */
-    margin: 35px;
+    margin: 40px;
     margin-left: -29px;
     cursor: pointer; /* Pointer/hand icon */
     width: 50px; /* Set a width if needed */
     height: 50px;
     display: block; /* Make the buttons appear below each other */
     transform: rotate(45deg);
-  }
-  
-  .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #3e8e41;
-  }
+}
 
-  .sidebar {
-      margin-left: 1000px;
-      margin-top: 100px;
-  }
+.sidebar {
+    margin-left: 1000px;
+    margin-top: 100px;
+}
 
-  #scoreboard {
-      font-style: bolder;
-      font-size: 25px
-  }
+#scoreboard {
+  font-style: bolder;
+  font-size: 25px
+}
 
-  .rectangle {
-    height: 20px;
-    width: 150px;
-    border-radius: 30px;
-    margin-top: 10px;
-  }
+.rectangle {
+  height: 20px;
+  width: 150px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
 
-  .valuebox {
-      margin-left: 200px;
-  }
+.valuebox {
+  margin-left: 200px;
+}
 
-  #reset-button {
-      border-radius: 10px;
-  }
+#reset-button {
+  border-radius: 10px;
+}

@@ -11,15 +11,21 @@ let new_value_green = 0;
 let new_value_red = 0;
 let new_value_yellow = 0;
 
+//If any diamond have won the race, dont let any diamond be clicked.
 function isWinner() {
     alert("There is already a winner, press reset to play again.");
 }
 
+/**
+* When a diamond is pushed, check if there is winner, if not, let the diamond
+* take a step forward. Convert the value to string to use % instead of int. 
+* Add value to valuebox for blue.
+* If valuebox has reached 10, turn the number red
+**/
 function blue() {
     if (blue_value < maxPos && green_value < maxPos && red_value < maxPos && yellow_value < maxPos) {
         blue_value += step;
         temp = blue_value.toString();
-        console.log(temp + "%");
         bluebutton.style.marginLeft = temp + "%";
         prevPos += step;
 
@@ -33,11 +39,11 @@ function blue() {
     }
 }
 
+//Function for when green diamond is pushed
 function green() {
     if (blue_value < maxPos && green_value < maxPos && red_value < maxPos && yellow_value < maxPos) {
         green_value += step;
         temp = green_value.toString();
-        console.log(temp + "%");
         greenbutton.style.marginLeft = temp + "%";
         prevPos += step;
 
@@ -51,11 +57,11 @@ function green() {
     }
 }
 
+//Function for when red diamond is pushed
 function red() {
     if (blue_value < maxPos && green_value < maxPos && red_value < maxPos && yellow_value < maxPos) {
         red_value += step;
         temp = red_value.toString();
-        console.log(temp + "%");
         redbutton.style.marginLeft = temp + "%";
         prevPos += step;
 
@@ -69,11 +75,11 @@ function red() {
     }
 }
 
+//Function for when yellow diamond is pushed
 function yellow() {
     if (blue_value < maxPos && green_value < maxPos && red_value < maxPos && yellow_value < maxPos) {
         yellow_value += step;
         temp = yellow_value.toString();
-        console.log(temp + "%");
         yellowbutton.style.marginLeft = temp + "%";
         prevPos += step;
 
@@ -87,6 +93,7 @@ function yellow() {
     }
 }
 
+//Reset diamonds position to startline, set the scoreboard value to 0, all scoreboard value black.
 function reset() {
     bluebutton.style.marginLeft = "-29px";
     greenbutton.style.marginLeft = "-29px";
@@ -110,6 +117,7 @@ function reset() {
     yellow_value = 0;
 }
 
+//Redefines the html "id" to make it easier to use
 const bluebutton = document.getElementById("blue")
 const greenbutton = document.getElementById("green")
 const redbutton = document.getElementById("red")
